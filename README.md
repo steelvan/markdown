@@ -24,7 +24,7 @@ Markdown не является заменой HTML. Синтаксис Markdown 
 
 [Таблицы](#tables)  
 [Зачеркивания](#Зачеркивания)
-
+[Свертки](#Свертки)
 
 
 
@@ -440,7 +440,29 @@ Markdown | не такой | красивый
 ```
 Две тильды по сторонам ~~добавляют~~ зачеркивание.
 
+##### <a name="Свертки"></a> Зачеркивания
 
+<details><summary>Заголовок свертки</summary>
+
+```bash
+git clone https://github.com/vlang/v
+cd v
+docker build -t vlang .
+docker run --rm -it vlang:latest
+v
+```
+
+### Docker with Alpine/musl
+
+```bash
+git clone https://github.com/vlang/v
+cd v
+docker build -t vlang --file=Dockerfile.alpine .
+docker run --rm -it vlang:latest
+/usr/local/v/v
+```
+
+</details>
 
 
 
